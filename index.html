@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
     <title>FORMULARIO</title>
 </head>
 <body>
     <h1>Formulario Información Alta Telefónica</h1>
-    <form action="" name="altaTelefonica">
-        <fieldset>
+    <form action="" name="altaTelefonica" method="POST">
+        <fieldset class="displayFieldset">
             <legend>Datos personales</legend>
+            <label for="firstName">Nombre:
+                <input id="firstName" type="text" name="firstName" maxlength="30"/>
+            </label>
+            <label for="lastName">Apellidos:
+                <input id="lastName" type="text" name="lastName" maxlength="60"/>
+            </label>
+            <label for="address">Dirección:
+                <input id="address" type="text" name="address" maxlength="60"/>
+            </label>
+            <label for="postalCode">Código Postal:
+                <input id="postalCode" type="text" name="postalCode" pattern="[0-9]{5}" minlength="5" maxlength="5"/>
+            </label>
+            <label for="city">Localidad:
+                <input id="city" type="text" name="city"/>
+            </label>
+        </fieldset>
+        <fieldset class="displayFieldset">
+            <legend>Tipo de Contratación</legend>
+            <div class="typeDisplay">
+                <label for="new"> Nueva Contratación:
+                    <input type="radio" id="new" value="new" name="contractType" checked="checked" />
+                </label>
+                <label for="portability">Portabilidad:
+                    <input type="radio" id="portability" value="portability" name="contractType"/>
+                </label>
+                <label for="change"> Cambio de Contrato:
+                    <input type="radio" id="change" value="change" name="contractType"/>
+                </label>
+            </div>
+
         </fieldset>
     </form>
 </body>

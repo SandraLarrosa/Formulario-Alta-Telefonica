@@ -1,0 +1,14 @@
+
+
+.displayFieldset{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.typeDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
