@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <title>FORMULARIO</title>
 </head>
 <body>
     <h1>Formulario Información Alta Telefónica</h1>
-    <form action="" name="altaTelefonica" method="POST">
+    <form action="/signup" name="altaTelefonica" method="POST">
         <fieldset class="displayFieldset">
             <legend>Datos personales</legend>
             <label for="firstName">Nombre:
@@ -88,8 +88,41 @@
                 <span>(dos dígitos)</span>
             </label>
         </fieldset>
-        <input type="submit" value="submit"/>
-        <input type="reset" value="reset"/>
+        <fieldset class="displayFieldset">
+            <legend>Datos Estadisticos - ¿Cómo nos conoció?</legend>
+            <div class="meetStatistics">
+                <label for="tv">
+                    <input type="checkbox" id="tv" value="tv" name="meet" />
+                    A través de la TV
+                </label>
+                <label for="radio">
+                    <input type="checkbox" id="radio" value="radio" name="meet"/>
+                    A través de la radio
+                </label>
+                <label for="internet"> 
+                    <input type="checkbox" id="internet" value="internet" name="meet"/>
+                    A través de la Internet
+                </label>
+                <label for="other"> 
+                    <input type="checkbox" id="other" value="other" name="meet"/>
+                    Otros
+                </label>
+            </div>
+            <label for="assessment"> 
+                <input type="range" id="assessment" value="1" name="assessment" min="1" max="4" />
+                Valoración[1-5]
+            </label>
+            <label for="date"> Fecha de la encuesta: 
+                <input type="date" id="date" value="2019-01-01" name="date"/>
+                Valoración[1-5]
+            </label>
+        </fieldset>
+        <button type="submit" class="buttonForm">Enviar Datos</button>
+        <button type="reset">Borrar Datos</button>
     </form>
+    <button class="buttonAssessment">Mostrar Valoración</button>
+    <button class="buttonShowBank">Mostrar Cuenta</button>
+    <button>Mostrar Día Semana</button>
+<script src="./main.js"></script> 
 </body>
 </html>
