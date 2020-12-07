@@ -7,7 +7,7 @@
     <title>FORMULARIO</title>
 </head>
 <body>
-    <h1>Formulario Información Alta Telefónica</h1>
+    <h1 class="title">Formulario Información Alta Telefónica</h1>
     <form action="" name="altaTelefonica" >
         <fieldset class="displayFieldset">
             <legend>Datos personales</legend>
@@ -30,17 +30,19 @@
         <fieldset class="displayFieldset">
             <legend>Tipo de Contratación</legend>
             <div class="typeDisplay">
-                <label for="new"> Nueva Contratación:
-                    <input type="radio" id="new" value="new" name="contractType" checked="checked" required/>
+                <label for="new" class="radioType">
+                    <input type="radio" id="new" value="new" name="contractType" checked="checked" required />
+                    Nueva Contratación
                 </label>
-                <label for="portability">Portabilidad:
-                    <input type="radio" id="portability" value="portability" name="contractType" required/>
+                <label for="portability" class="radioType">
+                    <input type="radio" id="portability" value="portability" name="contractType" required />Portabilidad
                 </label>
-                <label for="change"> Cambio de Contrato:
-                    <input type="radio" id="change" value="change" name="contractType" required/>
+                <label for="change" class="radioType"> 
+                    <input type="radio" id="change" value="change" name="contractType" required />
+                    Cambio de Contrato
                 </label>
             </div>
-            <div class="typeDisplay">
+            <div class="typeDisplay company">
                 <label for='company'>Elija la compañía actual:
                     <select id='company' name='company'>
                         <option value="movistar">Movistar</option>

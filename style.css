@@ -1,4 +1,10 @@
 
+.title{
+    text-align: center;
+    color: blue;
+    text-shadow: 1px 1px 2px  yellow;
+}
+
 .displayFieldset{
     width: 800px;
     display: flex;
@@ -9,8 +15,15 @@
 .typeDisplay{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin: 10px;
+}
+
+.radioType{
+    margin-right: 40px;
+}
+
+.company{
+    justify-content: space-between;
 }
 
 .meetStatistics{
