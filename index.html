@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1 class="title">Formulario Información Alta Telefónica</h1>
-    <form action="" name="altaTelefonica" >
+    <form action="" name="altaTelefonica" class="form" >
         <fieldset class="displayFieldset">
             <legend>Datos personales</legend>
             <label for="firstName">Nombre:
@@ -42,7 +42,7 @@
                     Cambio de Contrato
                 </label>
             </div>
-            <div class="typeDisplay company">
+            <div class="typeDisplay">
                 <label for='company'>Elija la compañía actual:
                     <select id='company' name='company'>
                         <option value="movistar">Movistar</option>
@@ -97,33 +97,35 @@
                     A través de la TV
                 </label>
                 <label for="radio">
-                    <input type="checkbox" id="radio" value="radio" name="meet" required/>
+                    <input type="checkbox" id="radio" value="radio" name="meet" />
                     A través de la radio
                 </label>
                 <label for="internet"> 
-                    <input type="checkbox" id="internet" value="internet" name="meet" required/>
+                    <input type="checkbox" id="internet" value="internet" name="meet" />
                     A través de la Internet
                 </label>
                 <label for="other"> 
-                    <input type="checkbox" id="other" value="other" name="meet" required/>
+                    <input type="checkbox" id="other" value="other" name="meet" />
                     Otros
                 </label>
             </div>
-            <label for="assessment"> 
+            <label for="assessment" class="statistics"> 
                 <input type="range" id="assessment" value="1" name="assessment" min="1" max="4" required/>
                 Valoración[1-5]
             </label>
-            <label for="date"> Fecha de la encuesta: 
+            <label for="date"> Fecha de la Encuesta: 
                 <input type="date" id="date" value="2019-01-01" name="date" required/>
                 Valoración[1-5]
             </label>
         </fieldset>
         <button type="submit" class="buttonForm">Enviar Datos</button>
         <button type="reset">Borrar Datos</button>
+        <div class="buttonsShow">
+            <button class="buttonAssessment">Mostrar Valoración</button>
+            <button class="buttonShowBank">Mostrar Cuenta</button>
+            <button class="buttonShowDay">Mostrar Día Semana</button>
+        </div>
     </form>
-    <button class="buttonAssessment">Mostrar Valoración</button>
-    <button class="buttonShowBank">Mostrar Cuenta</button>
-    <button class="buttonShowDay">Mostrar Día Semana</button>
 <script src="./main.js"></script> 
 </body>
 </html>

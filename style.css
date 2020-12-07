@@ -2,11 +2,32 @@
 .title{
     text-align: center;
     color: blue;
-    text-shadow: 1px 1px 2px  yellow;
+    text-shadow: 2px 2px 2px  yellow;
+}
+
+.form{
+    margin: 20px;
+}
+
+legend{
+    background-color: red;
+    color: white;
+}
+
+fieldset{
+    background-color: aqua;
+    border: inherit;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+input[type=text]{
+    background-color: yellow;
+    border-radius: 5px;
 }
 
 .displayFieldset{
-    width: 800px;
+    width: auto;
     display: flex;
     flex-direction: column;
 }
@@ -22,11 +43,21 @@
     margin-right: 40px;
 }
 
-.company{
-    justify-content: space-between;
+#company{
+    margin-right: 30px;
 }
 
+.statistics{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .meetStatistics{
     display: flex;
     flex-direction: column;
+}
+
+.buttonsShow button{
+    background-color: pink;
+    width: 100px;
+    border-radius: 5px;
 }
