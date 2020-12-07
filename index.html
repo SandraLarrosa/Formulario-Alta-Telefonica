@@ -4,41 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
     <title>FORMULARIO</title>
 </head>
 <body>
     <h1>Formulario Información Alta Telefónica</h1>
-    <form action="/signup" name="altaTelefonica" method="POST">
+    <form action="" name="altaTelefonica" >
         <fieldset class="displayFieldset">
             <legend>Datos personales</legend>
             <label for="firstName">Nombre:
-                <input id="firstName" type="text" name="firstName" maxlength="30"/>
+                <input id="firstName" type="text" name="firstName" maxlength="30" required/>
             </label>
             <label for="lastName">Apellidos:
-                <input id="lastName" type="text" name="lastName" maxlength="60"/>
+                <input id="lastName" type="text" name="lastName" maxlength="60" required/>
             </label>
             <label for="address">Dirección:
-                <input id="address" type="text" name="address" maxlength="60"/>
+                <input id="address" type="text" name="address" maxlength="60" required/>
             </label>
             <label for="postalCode">Código Postal:
-                <input id="postalCode" type="text" name="postalCode" pattern="[0-9]{5}" minlength="5" maxlength="5"/>
+                <input id="postalCode" type="text" name="postalCode" pattern="[0-9]{5}" minlength="5" maxlength="5 required"/>
             </label>
             <label for="city">Localidad:
-                <input id="city" type="text" name="city"/>
+                <input id="city" type="text" name="city" required/>
             </label>
         </fieldset>
         <fieldset class="displayFieldset">
             <legend>Tipo de Contratación</legend>
             <div class="typeDisplay">
                 <label for="new"> Nueva Contratación:
-                    <input type="radio" id="new" value="new" name="contractType" checked="checked" />
+                    <input type="radio" id="new" value="new" name="contractType" checked="checked" required/>
                 </label>
                 <label for="portability">Portabilidad:
-                    <input type="radio" id="portability" value="portability" name="contractType"/>
+                    <input type="radio" id="portability" value="portability" name="contractType" required/>
                 </label>
                 <label for="change"> Cambio de Contrato:
-                    <input type="radio" id="change" value="change" name="contractType"/>
+                    <input type="radio" id="change" value="change" name="contractType" required/>
                 </label>
             </div>
             <div class="typeDisplay">
@@ -64,28 +63,28 @@
         <fieldset class="displayFieldset">
             <legend>Datos Bancarios:</legend>
             <label for="country">País: 
-                <input type="text" id="country" name="country" value="ES" readonly="readonly" />
+                <input type="text" id="country" name="country" value="ES" readonly="readonly" required>
                 <span>(sólo válido ES)</span>
             </label>
             <label for="iban">Control IBAN: 
-                <input type="text" id="iban" name="iban" placeholder="XX" pattern="[0-9]{2}" minlength="2" maxlength="2" />
+                <input type="text" id="iban" name="iban" placeholder="XX" pattern="[0-9]{2}" minlength="2" maxlength="2" required/>
                 <span>(dos dígitos)</span>
             </label>
             <label for="bank">Entidad: 
-                <input type="text" id="bank" name="bank" placeholder="XXXX" pattern="[0-9]{4}" minlength="4" maxlength="4" />
+                <input type="text" id="bank" name="bank" placeholder="XXXX" pattern="[0-9]{4}" minlength="4" maxlength="4" required/>
                 <span>(cuatro dígitos)</span>
             </label>
             <label for="branch">Sucursal: 
-                <input type="text" id="branch" name="branch" placeholder="XXXX" pattern="[0-9]{4}" minlength="4" maxlength="4" />
+                <input type="text" id="branch" name="branch" placeholder="XXXX" pattern="[0-9]{4}" minlength="4" maxlength="4" required/>
                 <span>(cuatro dígitos)</span>
             </label>
             <label for="dc">DC: 
-                <input type="text" id="dc" name="dc" placeholder="XX" pattern="[0-9]{2}" minlength="2" maxlength="2" />
+                <input type="text" id="dc" name="dc" placeholder="XX" pattern="[0-9]{2}" minlength="2" maxlength="2" required/>
                 <span>(dos dígitos)</span>
             </label>
             <label for="account">Cuenta: 
-                <input type="text" id="account" name="account" placeholder="XXXXXXXXXX" pattern="[0-9]{10}" minlength="10" maxlength="10" />
-                <span>(dos dígitos)</span>
+                <input type="text" id="account" name="account" placeholder="XXXXXXXXXX" pattern="[0-9]{10}" minlength="10" maxlength="10" required/>
+                <span>(diez dígitos)</span>
             </label>
         </fieldset>
         <fieldset class="displayFieldset">
@@ -96,24 +95,24 @@
                     A través de la TV
                 </label>
                 <label for="radio">
-                    <input type="checkbox" id="radio" value="radio" name="meet"/>
+                    <input type="checkbox" id="radio" value="radio" name="meet" required/>
                     A través de la radio
                 </label>
                 <label for="internet"> 
-                    <input type="checkbox" id="internet" value="internet" name="meet"/>
+                    <input type="checkbox" id="internet" value="internet" name="meet" required/>
                     A través de la Internet
                 </label>
                 <label for="other"> 
-                    <input type="checkbox" id="other" value="other" name="meet"/>
+                    <input type="checkbox" id="other" value="other" name="meet" required/>
                     Otros
                 </label>
             </div>
             <label for="assessment"> 
-                <input type="range" id="assessment" value="1" name="assessment" min="1" max="4" />
+                <input type="range" id="assessment" value="1" name="assessment" min="1" max="4" required/>
                 Valoración[1-5]
             </label>
             <label for="date"> Fecha de la encuesta: 
-                <input type="date" id="date" value="2019-01-01" name="date"/>
+                <input type="date" id="date" value="2019-01-01" name="date" required/>
                 Valoración[1-5]
             </label>
         </fieldset>
@@ -122,7 +121,7 @@
     </form>
     <button class="buttonAssessment">Mostrar Valoración</button>
     <button class="buttonShowBank">Mostrar Cuenta</button>
-    <button>Mostrar Día Semana</button>
+    <button class="buttonShowDay">Mostrar Día Semana</button>
 <script src="./main.js"></script> 
 </body>
 </html>
