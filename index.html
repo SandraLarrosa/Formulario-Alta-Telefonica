@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1 class="title">Formulario Información Alta Telefónica</h1>
-    <form action="" name="altaTelefonica" class="form" >
+    <form action="./formularioAlta.php" name="altaTelefonica" class="form" >
         <fieldset class="displayFieldset">
             <legend>Datos personales</legend>
             <label for="firstName">Nombre:
@@ -21,7 +21,7 @@
                 <input id="address" type="text" name="address" maxlength="60" required/>
             </label>
             <label for="postalCode">Código Postal:
-                <input id="postalCode" type="text" name="postalCode" pattern="[0-9]{5}" minlength="5" maxlength="5 required"/>
+                <input id="postalCode" type="text" name="postalCode" pattern="[0-9]{5}" minlength="5" maxlength="5" required />
             </label>
             <label for="city">Localidad:
                 <input id="city" type="text" name="city" required/>
@@ -110,7 +110,7 @@
                 </label>
             </div>
             <label for="assessment" class="statistics"> 
-                <input type="range" id="assessment" value="1" name="assessment" min="1" max="4" required/>
+                <input type="range" id="assessment" value="1" name="assessment" min="1" max="4"/>
                 Valoración[1-5]
             </label>
             <label for="date"> Fecha de la Encuesta: 
