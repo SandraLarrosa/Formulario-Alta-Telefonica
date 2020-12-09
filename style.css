@@ -29,6 +29,7 @@ input[type=text]{
 .displayFieldset{
     width: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -36,6 +37,7 @@ input[type=text]{
 .typeDisplay{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin: 10px;
 }
 
