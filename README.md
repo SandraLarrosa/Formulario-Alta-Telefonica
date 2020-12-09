@@ -2,7 +2,7 @@
 Realización de una página web dinámica y funcional con un formulario de alta telefónica.
 
 
-#### Funcionalidades ✔️
+### Funcionalidades ✔️
 Por un lado, se quiere introducir información relativa a la persona, como son su nombre (con una longitud máxima de 30 caracteres),apellidos (con una longitud máxima de 60 caracteres), dirección (con una longitud de 60), código postal (que será un numérico de tamaño cinco) y la localidad.
  
 Por otro lado se quiere recoger información sobre el tipo de contrato que se quiere realizar, pudiéndose elegir una de tres opciones: nueva contratación (que aparecerá marcada por defecto), portabilidad y cambio de contrato.
@@ -30,7 +30,7 @@ Aparte de un botón para poder enviar el formulario, y otro para poder resetear 
 - JavaScript
 
 
-##### Descarga o clona el repositorio. ⚙️
+### Descarga o clona el repositorio. ⚙️
 ```bash 
 $ git clone https://github.com/SandraLarrosa/Formulario-Alta-Telefonica.git
 ```
