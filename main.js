@@ -1,7 +1,7 @@
 
 const buttonAssessment = document.querySelector('.buttonAssessment');
-const buttonShowBank = document.querySelector('.buttonShowBank')
-const buttonShowDay = document.querySelector('.buttonShowDay')
+const buttonShowBank = document.querySelector('.buttonShowBank');
+const buttonShowDay = document.querySelector('.buttonShowDay');
 
 
 const showAssessment = () => {
@@ -33,8 +33,7 @@ const showDay = () => {
     alert(`La fecha seleccionada en el elemento de fecha es ${nameDay}`);
 }
 
-
-buttonAssessment.addEventListener('click', showAssessment)
-buttonShowBank.addEventListener('click', showBank)
-buttonShowDay.addEventListener('click', showDay)
+buttonAssessment.addEventListener('click', showAssessment);
+buttonShowBank.addEventListener('click', showBank);
+buttonShowDay.addEventListener('click', showDay);
 
