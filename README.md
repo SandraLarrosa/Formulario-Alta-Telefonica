@@ -23,7 +23,7 @@ Aparte de un botón para poder enviar el formulario, y otro para poder resetear 
 - El botón "Mostrar Día Semana" indicará qué día de la semana (Lunes a Domingo) correspond la fecha introducida.
 
 
-### 💻Tecnologías utilizadas 
+### Tecnologías utilizadas 💻
 
 - HTML5
 - CSS3
